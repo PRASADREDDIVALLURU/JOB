@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#67EF76"
+    android:orientation="vertical"
+    tools:context=".LoginScreen">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="155dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="matrix"
+        android:src="@drawable/job" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="FIND MY JOB"
+        android:textColor="#ffff"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-light"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:drawableRight="@drawable/ic_baseline_email_24"
+            android:backgroundTint="#010203"
+            android:textCursorDrawable="@color/colorAccent"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:paddingRight="10dp"
+            android:id="@+id/email"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#010203"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:backgroundTint="#010203"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:id="@+id/pwd"
+            android:maxLines="1"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="30dp"
+        android:background="#808080"
+        android:backgroundTint="#5b39c6"
+        android:onClick="login"
+        android:text="LOG IN"
+        android:textColor="#ffff"/>
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:onClick="forgot"
+        android:layout_marginTop="20dp"
+        android:text="                                        forgot your password ?" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="signup"
+            android:text="Register Here"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="170dp"
+            />
+    </LinearLayout>
+</LinearLayout>

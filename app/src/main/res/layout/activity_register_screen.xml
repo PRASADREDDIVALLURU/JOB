@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainimg3"
+    tools:context=".RegisterScreen">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:id="@+id/register"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColorHighlight="@color/common_google_signin_btn_text_light"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:gravity="center"
+        android:background="#78EF67"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="UserName:-"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:id="@+id/uname"  />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email_Id:-"
+        android:textSize="25sp"
+        android:id="@+id/email"  />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="Phno:-"
+        android:textSize="25sp"
+        android:id="@+id/num"  />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textSize="25sp"
+        android:id="@+id/pwd"  />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:textSize="25sp"
+        android:id="@+id/cpwd"  />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Male"
+            android:textSize="30sp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Female"
+            android:textSize="30sp"/>
+    </RadioGroup>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HighestDegree:-"
+        android:inputType="text"
+        android:textSize="25sp"
+        android:id="@+id/highdeg"
+        />
+    <Button
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="Continue"
+        android:layout_marginTop="20dp"
+        android:background="#78EF67"
+        android:text="Continue" />
+
+</LinearLayout>

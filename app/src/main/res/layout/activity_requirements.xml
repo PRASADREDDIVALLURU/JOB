@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/education"
+    tools:context=".Requirements">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Requirements"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:id="@+id/personal"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:text="Work hours"
+        android:textSize="27sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
+        android:id="@+id/time"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="Scope of work"
+        android:textSize="27sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
+        android:id="@+id/work"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="Salary required"
+        android:textSize="27sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
+        android:id="@+id/salary"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="Your requirements"
+        android:textSize="27sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
+        android:id="@+id/other"/>
+    <Button
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="Save"
+        android:layout_marginTop="20dp"
+        android:background="#78EF67"
+        android:text="SAVE" />
+
+    <Button
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="Goback"
+        android:layout_marginTop="20dp"
+        android:background="#78EF67"
+        android:text="GO BACK" />
+
+
+
+</LinearLayout>

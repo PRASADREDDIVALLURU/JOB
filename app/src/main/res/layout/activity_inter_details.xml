@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blaa"
+    tools:context=".Inter_details">
+
+    <EditText
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#78EF67"
+        android:gravity="center"
+        android:text="INTERMEDIATE DETAILS"
+        android:textColorHighlight="@color/common_google_signin_btn_text_light"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="Name of College:-"
+        android:layout_marginTop="80dp"
+        android:textSize="20sp"
+        android:id="@+id/clgname1"  />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YearCompleted:-"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:id="@+id/year"  />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Percentage"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Marks"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="MarksSecured:-"
+        android:textSize="20sp"
+        android:id="@+id/num"  />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="Board:-"
+        android:textSize="20sp"
+        android:id="@+id/board"  />
+    <Button
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="Save"
+        android:layout_marginTop="20dp"
+        android:background="#78EF67"
+        android:text="SAVE" />
+
+    <Button
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="Goback"
+        android:layout_marginTop="20dp"
+        android:background="#78EF67"
+        android:text="GO BACK" />
+
+</LinearLayout>

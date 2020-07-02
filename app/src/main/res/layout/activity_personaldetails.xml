@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/homeimage"
+    android:padding="15dp"
+    tools:context=".Personaldetails">
+
+     <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Personal details"
+    android:textSize="30dp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:background="@color/colorAccent"
+    android:id="@+id/personal"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text|number"
+        android:hint="Aadhar number"
+        android:textSize="27sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:id="@+id/Aadhar"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text|number"
+        android:hint="Passport number"
+        android:textSize="27sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:id="@+id/passport"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:hint="Permanent Address"
+        android:textSize="27sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:id="@+id/p_address"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Fathers name"
+        android:textSize="27sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:id="@+id/daddy"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Marital Status"
+        android:textSize="27sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:id="@+id/maritalstatus"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:onClick="Save"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:onClick="Update"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+
+
+
+
+</LinearLayout>
